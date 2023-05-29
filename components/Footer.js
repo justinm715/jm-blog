@@ -77,13 +77,17 @@ const ThemeSwitcher = () => {
   );
 };
 
+
+
 export default function Footer({ copyrightText }) {
+    /*
+    * For the dark/light theme toggle, add <ThemeSwitcher /> below
+    */
   return (
-    <footer className="py-16 flex flex-col items-center">
-      <p className="dark:text-white uppercase mb-3 font-bold opacity-60">
+    <footer className="w-full">
+      <p className="mt-8 py-4 dark:text-white mb-3 mx-2 opacity-60 border-t border-gray-300">
         {copyrightText}
       </p>
-      <ThemeSwitcher />
     </footer>
   );
 }
